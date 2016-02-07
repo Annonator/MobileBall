@@ -4,7 +4,7 @@ using UnityEngine;
 
 using _4Warp.Framework.Controlls;
 
-namespace _4Warp.Framework.Editor
+namespace _4Warp.Editor
 {
     [CustomEditor(typeof(PlayerController))]
     public class PlayerControllerGizmo : UnityEditor.Editor

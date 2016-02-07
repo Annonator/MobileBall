@@ -1,12 +1,14 @@
-﻿using System.Collections;
-
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace _4Warp.Framework.Controlls
 {
     public class PlayerController : MonoBehaviour
     {
         public Vector2 Direction;
+
+        private float Horizontal;
+
+        public float Vertical { get; private set; }
 
         public void Start()
         {
@@ -15,6 +17,8 @@ namespace _4Warp.Framework.Controlls
 
         public void Update()
         {
+            this.Horizontal = Input.GetAxis("Horizontal");
+            this.Vertical = Input.GetAxis("Vertical");
         }
     }
 }

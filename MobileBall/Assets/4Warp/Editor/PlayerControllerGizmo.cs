@@ -29,6 +29,12 @@ namespace _4Warp.Editor
         public override void OnInspectorGUI()
         {
             this.DrawDefaultInspector();
+            PlayerController test = this.target as PlayerController;
+
+            if (test != null)
+            {
+                EditorGUILayout.LabelField("test", test.Vertical.ToString());
+            }
             VisualizeDirection = EditorGUILayout.Toggle("Toggle Direction", VisualizeDirection);
         }
     }
